@@ -1,0 +1,33 @@
+@import '../../styles/_colors';
+
+$chat-title-shadow: darken($accent-color, 75.29);
+
+#chat-title {
+    display: grid;
+    grid: 36px / 1fr 36px;
+    align-content: center;
+    align-items: center;
+    grid-area: chat-title;
+    background: $accent-color;
+    color: $primary-color;
+    font-weight: bold;
+    font-size: 2.0rem;
+    border-radius: 0 10px 0 0;
+    box-shadow: 0 1px 3px -1px $chat-title-shadow;
+    padding: 0 20px;
+    z-index: 1;
+
+    .icon-set{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .phIcon {
+        font-size: 2rem;
+        padding-right: 10px
+    }
+    .dotIcon{
+        font-size: 2.1rem;
+        padding-right: 7px
+    }
+}
